@@ -329,3 +329,135 @@ footer {
     margin-left: 0 !important;
     margin-right: 0 !important;
 } */
+
+
+/* SMALLER SCREENS */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    /* Adjust the font size */
+    html {
+      font-size: 16px;
+    }
+    
+    /* Adjust the width and margin of the menu bar */
+    #menu-bar {
+      width: 40px;
+      margin: 40px 10px 10px 20px;
+    }
+    
+    /* Show the navigation menu */
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 1;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .nav li {
+      margin: 10px 0;
+    }
+  
+    /* Adjust the height of the hero section */
+    .hero {
+      min-height: calc(100vh - 50px);
+    }
+    
+    /* Adjust the padding of the about me section */
+    .about-me {
+      padding: 50px 20px;
+    }
+
+    
+    /* Adjust the padding of the professional story section */
+    .my-professional-story {
+      padding: 50px 20px;
+    }
+    
+    /* Adjust the font size and margin of the professional story header */
+    .my-professional-story-header h2 {
+      font-size: 24px;
+      margin: 0 0 20px;
+    }
+    
+    /* Adjust the margin and font size of the professional story items */
+    .my-professional-story-item {
+      margin: 20px 0;
+    }
+    
+    .my-professional-story-text h4 {
+      font-size: 18px;
+    }
+    
+    .my-professional-story-text p {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    /* Adjust the height of the social buttons */
+    .social-btn {
+      height: 60px;
+    }
+    
+    /* Adjust the padding of the social button list items */
+    .social-btn li {
+      padding: 0 10px;
+    }
+    
+    /* Adjust the font size of the social button links */
+    .social-btn li a {
+      font-size: 1.2em;
+    }
+    
+    /* Adjust the margin of the footer */
+    footer {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Media query for screens smaller than 576px */
+  @media (max-width: 575px) {
+    /* Adjust the font size */
+    html {
+      font-size: 14px;
+    }
+    
+    /* Adjust the width and margin of the menu bar */
+    #menu-bar {
+      width: 30px;
+      margin: 30px 10px 10px 20px;
+    }
+    
+    /* Adjust the font size of the navigation links */
+    .nav li a {
+      font-size: 0.8em;
+    }
+    
+    /* Adjust the margin of the about me section */
+    .about-me {
+      margin: 0 auto;
+      width: 90%;
+    }
+    
+    /* Adjust the margin of the professional story section */
+    .my-professional-story {
+      padding: 30px 20px;
+    }
+    
+    /* Adjust the font size and margin of the professional story header */
+    .my-professional-story-header h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    .about-me p {
+        max-width: 70%;
+      }
+}
